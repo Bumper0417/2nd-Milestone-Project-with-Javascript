@@ -27,24 +27,36 @@ In the future i want to make the site more analytic using more functions that wi
 
 ## Technologies Used
 
-[JAVASCRIPT](https://no.wikipedia.org/wiki/JavaScript)
-[BOOTSTRAP](https://en.wikipedia.org/wiki/BootstrapCDN)
-[GOOGLE FONTS](https://en.wikipedia.org/wiki/Google_Fonts)
-[GIT](https://no.wikipedia.org/wiki/Git)
-[GITHUB](https://en.wikipedia.org/wiki/GitHub)
-[GOOGLE PLACES API](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
-[CSS](https://no.wikipedia.org/wiki/Cascading_Style_Sheets)
-[HTML](https://no.wikipedia.org/wiki/HTML)
+- [JAVASCRIPT](https://no.wikipedia.org/wiki/JavaScript)
+- [BOOTSTRAP](https://en.wikipedia.org/wiki/BootstrapCDN)
+- [GOOGLE FONTS](https://en.wikipedia.org/wiki/Google_Fonts)
+- [GIT](https://no.wikipedia.org/wiki/Git)
+- [GITHUB](https://en.wikipedia.org/wiki/GitHub)
+- [GOOGLE PLACES API](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
+- [CSS](https://no.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [HTML](https://no.wikipedia.org/wiki/HTML)
 
 ## Testing
 
 ## Deployment
 
+This site is hosted using GitHub pages, deployed directly from the master branch.The webpage is consisted of 1 html documents, an assets folder and a README.md file.The assets folder includes 3 smaller folders:
+- CSS with a style.css document.
+- Wireframes with 5 jpg images of my Design.
+- JavaScript with main.js folder
+
 ## Credits
 
 ### Content
 
+All the content in About Us and the Info of the webpage were written by me.
+
 ### Media
 
+All the wireframes of the webpage were created my me and downloaded from my phone.
+
 ### Acknowledgements
+
+- I received inspiration from sites sush as: [Bootstrap](https://en.wikipedia.org/wiki/BootstrapCDN), [Youtube](https://www.youtube.com/), [Google](https://no.wikipedia.org/wiki/Google) and [W3Schools](https://www.w3schools.com/java/)
+- I also received code snipet from [Google Places](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete) and [Booking.com](https://www.booking.com/searchresults.el.html?label=gen173nr-1FCAEoggI46AdIM1gEaKoBiAEBmAEIuAEXyAEM2AEB6AEB-AELiAIBqAIDuALRx7LpBcACAQ&sid=626341e5ceb9d67eaf433e0dc4133f86&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.el.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaKoBiAEBmAEIuAEXyAEM2AEB6AEB-AELiAIBqAIDuALRx7LpBcACAQ%3Bsid%3D626341e5ceb9d67eaf433e0dc4133f86%3Bsb_price_type%3Dtotal%26%3B&ss=London%2C+Greater+London%2C+United+Kingdom&is_ski_area=0&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ss_raw=london&ac_position=0&ac_langcode=en&ac_click_type=b&dest_id=-2601889&dest_type=city&iata=LON&place_id_lat=51.507391&place_id_lon=-0.127634&search_pageview_id=0a1570e87c570054&search_selected=true)
 
