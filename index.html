@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Place Autocomplete</title>
+    <title>Second Milestone Project</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
@@ -10,14 +10,16 @@
   </head>
   <body>
     <div class="col-heading">
-      <h1 class="name">Global Guide tour</h1>
-      <h2 class="title">We bring the whole world to your house!</h2>
+        <div class="earth"></div>
+        <h1 class="name">Global Guide tour</h1>
+        <h2 class="title">We bring the whole world to your house!</h2>
+        <div class="earth"></div>
     </div>
     <div class="row">
-      <button class="btn btn-primary" type="submit">Search Location</button>
-      <button class="btn btn-primary" type="submit">Search Tourist Attractions</button>
-      <button class="btn btn-primary" type="submit">Search Accomodation</button>
-      <button class="btn btn-primary" type="submit">Search Bars & Restaurants</button>
+      <button class="btn" type="submit" onclick="test('location');">Search Location</button>
+      <button class="btn" type="submit" onclick="test('tourist attractions');">Search Tourist Attractions</button>
+      <button class="btn" type="submit" onclick="test('accomodations');">Search Accomodation</button>
+      <button class="btn" type="submit"  onclick="test('restaurants');">Search Bars & Restaurants</button>
     </div>
     <div class="pac-card" id="pac-card">
       <div>
