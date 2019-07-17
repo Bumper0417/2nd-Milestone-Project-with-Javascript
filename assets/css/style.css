@@ -1,80 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*------------Heading--------*/
+
+.col-heading{
+  background-color:	#5F9EA0;
+  text-align:center;
+  color:#fafafa;
+  min-height: 120px;
+  margin: 0;
+}
+
+
   /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 50%;
-        margin: 10px;
-        position: relative;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #description {
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-      }
+#map {
+  height: 50%;
+  margin: 10px;
+  position: relative;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
 
-      #infowindow-content .title {
-        font-weight: bold;
-      }
+#infowindow-content .title {
+  font-weight: bold;
+}
 
-      #infowindow-content {
-        display: none;
-      }
+#infowindow-content {
+  display: none;
+}
 
-      #map #infowindow-content {
-        display: inline;
-      }
+#map #infowindow-content {
+  display: inline;
+}
 
-      .pac-card {
-        margin: 10px 10px 0 0;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        background-color: #fff;
-        font-family: Roboto;
-      }
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
 
-      #pac-container {
-        padding-bottom: 12px;
-        margin-right: 12px;
-      }
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
 
-      .pac-controls {
-        display: inline-block;
-        padding: 5px 11px;
-      }
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
 
-      .pac-controls label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
 
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 400px;
-      }
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
 
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
+#pac-input:focus {
+  border-color: #4d90fe;
+}
 
-      #title {
-        color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 6px 12px;
-      }
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+ /*----Footer-----*/
+ 
+footer{
+    background-color:	#6495ED;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links{
+    padding-bottom: 15px;
+    text-align: center;
+ }
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align:center;
+    color:#fafafa;
+    background-color:	#B8860B;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+     
+}
+.social-links li a i:hover{
+     background-color: 	#9932CC;
+}
+#footer-details{
+    padding: 20px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+      

@@ -4,9 +4,21 @@
     <title>Place Autocomplete</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
   <body>
+    <div class="col-heading">
+      <h1 class="name">Global Guide tour</h1>
+      <h2 class="title">We bring the whole world to your house!</h2>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary" type="submit">Search Location</button>
+      <button class="btn btn-primary" type="submit">Search Tourist Attractions</button>
+      <button class="btn btn-primary" type="submit">Search Accomodation</button>
+      <button class="btn btn-primary" type="submit">Search Bars & Restaurants</button>
+    </div>
     <div class="pac-card" id="pac-card">
       <div>
         <div id="title">
@@ -44,5 +56,44 @@
 
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmZXw5yH7ti5_wLbS2mgrhIafL96c2z4Q&libraries=places&callback=initMap"async defer></script>
+    <footer class="container-fluid">
+      <div id="footer-details" class="row">
+        <div class="col-md-6">
+          <h5 class="uppercase general-sub">About Us</h5>
+          <p class="inline-block">
+            Global Guide Tour <i class="fa fa-globe"></i> has as it's main focus to simplify the research of any individual when they are trying to find the best destination for their vacation!
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="uppercase general-sub">Follow us in Social Media!</h5>
+          <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="http://facebook.com/christos.gkoros">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/xristosgoros/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/in/christos-gkoros-1090a784/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://no.pinterest.com/chrisgoros13/">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
+                        </a>
+                    </li>
+                </ul> 
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
