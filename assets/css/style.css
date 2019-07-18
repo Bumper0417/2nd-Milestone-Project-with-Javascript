@@ -17,18 +17,21 @@
 .ui-menu-color-contact {
     background-color: #F4A460;
 }
-/*------------Heading--------*/
+
  /*-----Heading-----*/
 header {
     margin: 0;
 }
-.col-heading {
+.heading {
     margin-left: 50px;
 }
 
 .logo {
-    background: url('../earth.jpg');
+    background: url('../wireframes/earth.jpg');
+    border-radius:50%;
     background-position: center;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+    animation: spin 30s linear alternate infinite ;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
@@ -36,9 +39,14 @@ header {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+
+@keyframes spin 
+    100%(background-position:100%;)
+
+
 .name {
     font-family: "Exo", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 60px;
     margin-top: 50px;
     color:#fafafa;
@@ -47,7 +55,7 @@ header {
 
 .title {
     font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
