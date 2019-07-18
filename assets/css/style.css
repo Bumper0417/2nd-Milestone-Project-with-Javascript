@@ -40,8 +40,9 @@ header {
     -webkit-transition: all .5s ease-in-out;
 }
 
-@keyframes spin 
-    100%(background-position:100%;)
+@keyframes spin {
+    100%{background-position: 100%}
+}
 
 
 .name {
