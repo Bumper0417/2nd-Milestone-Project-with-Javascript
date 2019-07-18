@@ -1,17 +1,114 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*------------Colors--------*/
+
+.bg-color-name-title {
+    background-color:#5e76c6;
+}
+
+.bg-color-contact{
+    background-color:  #F4A460;
+}
+
+.ui-menu-color-home {
+    background-color: #2E8B57;
+}
+
+.ui-menu-color-contact {
+    background-color: #F4A460;
+}
 /*------------Heading--------*/
+ /*-----Heading-----*/
+header {
+    margin: 0;
+}
+.col-heading {
+    margin-left: 50px;
+}
 
 .logo {
-  background: url(assets/wireframes/earth.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 360px;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+    background: url('../earth.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
+.name {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    margin-top: 50px;
+    color:#fafafa;
+    
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color:#FFFFFF;
+}
+
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+.menucontainer {
+    font-size: 0;
+}
+
+#nav {
+    margin: 0;
+}
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*-----Hover-----*/
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+.hvr-sweep-to-top:before{
+    background:rgba(0, 0, 0, 0.2);
+}
+
+
 
   /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -133,6 +230,18 @@ footer{
   text-transform: uppercase;
   text-align: center;
 }
+
+/*--------Media Queries------*/
+
+@media(min-width: 992px){
+    .center-form{
+      padding-top: 30px;
+      min-height: 240px;
+      margin:0 auto;
+      max-width: 50%;
+    }
+}
+
 
 
       
