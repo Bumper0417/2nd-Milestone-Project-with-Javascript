@@ -20,8 +20,11 @@
 
  /*-----Heading-----*/
 header {
+    background-color:#5e76c6;
+    background-size:cover;
     margin: 0;
 }
+
 .heading {
     margin-left: 50px;
 }
