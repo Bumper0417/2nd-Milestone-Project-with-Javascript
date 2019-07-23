@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
   <body>
-  <header>
+    <header>
         <div class="row no-gutters">
             <a href="index.html" class="col-md-2 logo"></a>
             <div class="col-md-8 ">
@@ -34,43 +34,28 @@
                         </ul>
         </div>
     </header>
-    <div class="pac-card" id="pac-card">
-      <div>
-        <div id="title">
-          Search Criteria
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">Got any Questions?</h3>
+                <h5 class="uppercase text-center">Our Team is here to support you!</h5>
+                
+                <div class="center-form">
+                    <form>
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
+                        <textarea rows="5"  name="subjectsummary" id="subjectsummary" class="form-control" placeholder="Subject description" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send your Question!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="type-selector" class="pac-controls">
-          <input type="radio" name="type" id="changetype-all" checked="checked">
-          <label for="changetype-all">Location</label>
-
-          <input type="radio" name="type" id="changetype-establishments">
-          <label for="changetype-establishments">Ladging</label>
-
-          <input type="radio" name="type" id="changetype-address">
-          <label for="changetype-address">Tourist Attractions</label>
-
-          <input type="radio" name="type" id="changetype-geocode">
-          <label for="changetype-geocode">Geocodes</label>
-        </div>
-        <div id="strict-bounds-selector" class="pac-controls">
-          <input type="checkbox" id="use-strict-bounds" value="">
-          <label for="use-strict-bounds">Strict Bounds</label>
-        </div>
-      </div>
-      <div id="pac-container">
-        <input id="pac-input" type="text"
-            placeholder="Enter a location">
-      </div>
-    </div>
-    <div id="map"></div>
-    <div id="infowindow-content">
-      <img src="" width="16" height="16" id="place-icon">
-      <span id="place-name"  class="title"></span><br>
-      <span id="place-address"></span>
-    </div>
-
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmZXw5yH7ti5_wLbS2mgrhIafL96c2z4Q&libraries=places&callback=initMap" async defer></script>
+        
+    </section>
     <footer class="container-fluid">
       <div id="footer-details" class="row">
         <div class="col-md-6">

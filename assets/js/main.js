@@ -85,7 +85,7 @@
           }
 
           setupClickListener('changetype-all', []);
-          setupClickListener('changetype-address', ['address']);
+          setupClickListener('changetype-address', ['museum']);
           setupClickListener('changetype-establishment', ['ladging']);
           setupClickListener('changetype-geocode', ['geocode']);
 
