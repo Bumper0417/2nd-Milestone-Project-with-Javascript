@@ -7,7 +7,7 @@
 }
 
 .bg-color-contact{
-    background-color:#FFFFE0;
+    background-color:#F0F8FF;
 }
 
 .ui-menu-color-home {
@@ -128,10 +128,8 @@ header {
     background:rgba(0, 0, 0, 0.2);
 }
 
+/*---MAP----*/
 
-
-  /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
 #map {
   height: 50%;
   position: relative;
