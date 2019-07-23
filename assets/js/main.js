@@ -81,9 +81,10 @@
           }
 
           setupClickListener('changetype-all', []);
-          setupClickListener('changetype-establishments', ['lodging']);
-          setupClickListener('changetype-establishments', ['bar']);
-          setupClickListener('changetype-geocode', ['geocode']);
+          setupClickListener('changetype-establishment', ['establishment']);
+          setupClickListener('changetype-establishment', ['establishment']);
+          setupClickListener('changetype-establishment', ['establishment']);
+          setupClickListener('changetype-establishment', ['establishment']);
 
           document.getElementById('use-strict-bounds')
               .addEventListener('click', function() {

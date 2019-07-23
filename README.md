@@ -42,6 +42,22 @@ In the future i want to make the site more analytic using more functions that wi
 
 ## Testing
 
+The potencial customers,users and fans user stories, achieved to provide them information about who we are,what are we doing and how they can reach us through the contact us form. 
+- The 'About us' footer specifies what a user can expect from this website and and our main focus when creating the webpage.
+- For the potensial customers that they want to see the places they are going to visit I used a map customed with the autocomplete function which allows them to see the results of their search by looking in the map.
+- For the users of the Webpage that want to contact us,they can do it easily through our social links on the bottom of the page in the Footer and they can also do it through our contact page.You can check it yourself:
+1. Go to the "Contact Us" page
+1. Try to submit the empty form and verify that an error message about the required fields appears
+1. Try to submit the form with an invalid email address and verify that a relevant error message appears
+1. Try to submit the form with all inputs valid and verify that the webpage will reload.
+
+As they have been manually tested, all the links will open in a new tab using 'target="_blank"'. 
+
+The site is tested in a variety of devices such as:Iphones(4 to 8),Samsung Galaxy,Ipads and Desktops.In addition it's tested to all the possible browsers:Chrome, Safari, Internet Explorer, FireFox and i assure that it is compatible and responsive.
+
+The biggest problem ...............
+
+
 ## Deployment
 
 This site is hosted using GitHub pages, deployed directly from the master branch.The webpage is consisted of 2 html documents, an assets folder and a README.md file.The assets folder includes 3 smaller folders:
