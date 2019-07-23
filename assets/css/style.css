@@ -18,6 +18,7 @@
     background-color:#F0E68C;
 }
 
+
  /*-----Heading-----*/
 header {
     background-color:#5e76c6;
@@ -256,21 +257,27 @@ footer{
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
-    
+    color:	#800000;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 .center-form{
     padding-top: 10px;
     margin:0 auto;
     max-width: 70%;
-    
+}
+.text-center{
+    color:	#800000;
 }
 
 button[type="submit"]{ 
     margin-top: 15px;
     margin-bottom: 20px;
     color:#fafafa;
-    background-color: #4682B4;}
+    background-color:#48D1CC;}
 
 /*--------Media Queries------*/
 
