@@ -3,7 +3,6 @@
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-     
       function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
               center: { lat: -33.8688, lng: 151.2195 },
@@ -82,8 +81,8 @@
           }
 
           setupClickListener('changetype-all', []);
-          setupClickListener('changetype-address', ['address']);
-          setupClickListener('changetype-establishment', ['ladging']);
+          setupClickListener('changetype-establishments', ['lodging']);
+          setupClickListener('changetype-establishments', ['bar']);
           setupClickListener('changetype-geocode', ['geocode']);
 
           document.getElementById('use-strict-bounds')
