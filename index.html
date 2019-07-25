@@ -25,12 +25,13 @@
         <div class="row no-gutters">
               <ul id="nav" class="list-inline menucontainer">
                   <li class="col-12 col-sm-6 ui-menu-color-home list-inline-item menuitem">
-                     <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home </span></a>
+                    <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home </span></a>
                   </li>
-                            
+                  
                   <li class="col-12 col-sm-6 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="contact-form.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact Form</span></a>
+                    <a href="contact-form.html" class="hvr-sweep-to-bottom" data-toggle="modal" data-target="#signUpModal"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact Form</span></a>
                   </li>
+                      
               </ul>
         </div>
     </header>
@@ -68,7 +69,39 @@
       <span id="place-name"  class="title"></span><br>
       <span id="place-address"></span>
     </div>
-
+    <!-- Modal Popup -->
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GOT ANY QUESTIONS?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Name">Full Name</label>
+                            <input type="text" class="form-control" id="Name" aria-describedby="nameHelp" placeholder="Enter Full Name" required>
+                           
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goals">Subject Description</label>
+                            <textarea class="form-control" id="goals" aria-describedby="goalsHelp" placeholder="Tell us what you need!" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="container-fluid">
       <div id="footer-details" class="row">
         <div class="col-md-6">
@@ -110,5 +143,8 @@
     </footer>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmZXw5yH7ti5_wLbS2mgrhIafL96c2z4Q&libraries=places&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
