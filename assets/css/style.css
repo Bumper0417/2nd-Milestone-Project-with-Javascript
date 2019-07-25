@@ -11,11 +11,11 @@
 }
 
 .ui-menu-color-home {
-    background-color: 	#8FBC8F;
+    background-color:	#3CB371;
 }
 
 .ui-menu-color-contact {
-    background-color:#F0E68C;
+    background-color:	#8FBC8F;
 }
 
 
@@ -57,9 +57,11 @@ header {
     font-weight: 200;
     font-size: 60px;
     margin-top: 50px;
-    margin-right: 60px;
+    margin-right: 20px;
+    margin-left: 10px;
     color:#fafafa;
     text-align: center;
+    position: center;
 }
 
 .title {
@@ -68,7 +70,8 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    margin-right: 60px;
+    margin-right: 20px;
+    margin-left: 15px;
     color:#FFFFFF;
     text-align:center;
 }
@@ -294,7 +297,7 @@ button[type="submit"]{
         padding-top: 40px;
         margin-bottom: 60px;
         margin-left: 26px;
-        margin-right: 19px;
+        margin-right: 26px;
     }
 }
 
