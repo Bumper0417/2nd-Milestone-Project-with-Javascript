@@ -64,6 +64,8 @@ The potencial customers,users and fans user stories, achieved to provide them in
 1. Try to submit the form with an invalid email address and verify that a relevant error message appears
 1. Try to submit the form with all inputs valid and verify that the webpage will reload.
 
+As mentioned in the Slack Channel it should be a single page application and that is why i transferred the contact form to the first page so it is opening in the same link. I did that with the help of modal in the [BOOTSTRAP](https://en.wikipedia.org/wiki/BootstrapCDN) 
+
 As they have been manually tested, all the links will open in a new tab using 'target="_blank"'. 
 
 The site is tested in a variety of devices such as:Iphones(4 to 8),Samsung Galaxy,Ipads and Desktops.In addition it's tested to all the possible browsers:Chrome, Safari, Internet Explorer, FireFox and i assure that it is compatible and responsive.
