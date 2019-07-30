@@ -35,7 +35,6 @@ In the future i want to make the site more analytic using more functions that wi
 - [BOOTSTRAP](https://en.wikipedia.org/wiki/BootstrapCDN)
 - [GOOGLE FONTS](https://en.wikipedia.org/wiki/Google_Fonts)
 - [GIT](https://no.wikipedia.org/wiki/Git)
-- [GITHUB](https://en.wikipedia.org/wiki/GitHub)
 - [GOOGLE PLACES API](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
 - [CSS](https://no.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [HTML](https://no.wikipedia.org/wiki/HTML)
@@ -74,7 +73,7 @@ The biggest problem i faced was to understand the functionality of the autocompl
 
 ## Deployment
 
-This site is hosted using GitHub pages, deployed directly from the master branch.The webpage is consisted of 2 html documents, an assets folder and a README.md file.The assets folder includes 3 smaller folders:
+This site is hosted using GitHub pages.It has been deployed directly from the master branch. The webpage's live link can be seen [HERE](https://bumper0417.github.io/2nd-Milestone-Project-with-Javascript/). The whole project can be viewed [HERE](https://github.com/Bumper0417/2nd-Milestone-Project-with-Javascript)The webpage is consisted of 1 html document, an assets folder and a README.md file.The assets folder includes 3 smaller folders:
 - CSS with a style.css document.
 - Wireframes with 5 jpg images of my Design.
 - JavaScript with main.js folder

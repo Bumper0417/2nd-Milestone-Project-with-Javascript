@@ -134,7 +134,7 @@ header {
 /*---MAP----*/
 
 #map {
-  height: 50%;
+  height: 100%;
   position: relative;
 }
 /* Optional: Makes the sample page fill the window. */
