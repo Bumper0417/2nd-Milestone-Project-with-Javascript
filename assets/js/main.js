@@ -1,3 +1,4 @@
+
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -33.8688, lng: 151.2195},
@@ -8,7 +9,7 @@ function initMap() {
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+        //map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
         var autocomplete = new google.maps.places.Autocomplete(input);
 
@@ -39,6 +40,15 @@ function initMap() {
             window.alert("No details available for input: '" + place.name + "'");
             return;
           }
+          
+          var request = {
+            location: location,
+            type: ['restaurant']
+          };
+          
+          infowindow = new google.maps.InfoWindow();
+          places = new google.maps.places.PlacesService(map);
+          places.nearbySearch(request,callback);
 
           // If the place has a geometry, then present it on a map.
           if (place.geometry.viewport) {
