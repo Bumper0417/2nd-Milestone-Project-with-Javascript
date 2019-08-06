@@ -1,3 +1,5 @@
+var countryRestrict = { 'country': [] };
+
 
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -11,7 +13,23 @@ function initMap() {
 
         //map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
-        var autocomplete = new google.maps.places.Autocomplete(input);
+        var autocomplete = new google.maps.places.Autocomplete(
+              /** @type {!HTMLInputElement} */
+              (
+              document.getElementById('autocomplete')), {
+              types: ['(cities)'],
+              componentRestrictions: countryRestrict
+              }); places = new google.maps.places.PlacesService(map);
+
+            autocomplete.addListener('place_changed', onPlaceChanged); 
+            document.getElementById('foodRadio').addEventListener('change', onPlaceChanged); 
+            document.getElementById('accomodationRadio').addEventListener('change', onPlaceChanged); 
+            document.getElementById('touristRadio').addEventListener('change', onPlaceChanged);
+           // Add a DOM event listener to react when the user selects a country.
+           document.getElementById('country').addEventListener('change', setAutocompleteCountry); 
+           document.getElementById('reset-button').addEventListener("click", setAutocompleteCountry);
+
+           }
 
         // Bind the map's bounds (viewport) property to the autocomplete object,
         // so that the autocomplete requests use the current map bounds for the
@@ -41,10 +59,6 @@ function initMap() {
             return;
           }
           
-          var request = {
-            location: location,
-            type: ['restaurant']
-          };
           
           infowindow = new google.maps.InfoWindow();
           places = new google.maps.places.PlacesService(map);
@@ -74,24 +88,45 @@ function initMap() {
           infowindowContent.children['place-address'].textContent = address;
           infowindow.open(map, marker);
         });
+        
+/// On Place Function//
+function onPlaceChanged() {
+ if ($("#accomodationRadio").is(':checked')) {
+  var place = autocomplete.getPlace();
+  if (place.geometry) {
+   map.panTo(place.geometry.location);
+   map.setZoom(15);
+   searchHotel();
+  }
+  else {
+   $('#autocomplete').attr("placeholder","Enter a city");
+  }
+ }
+ else if ($("#foodRadio").is(':checked')) {
+  var place = autocomplete.getPlace();
+  if (place.geometry) {
+   map.panTo(place.geometry.location);
+   map.setZoom(15);
+   searchRestaurant();
+  }
+  else {
+   $('#autocomplete').attr("placeholder","Enter a city");
+  }
+ }
+ else if ($("#touristRadio").is(':checked')) {
+  var place = autocomplete.getPlace();
+  if (place.geometry) {
+   map.panTo(place.geometry.location);
+   map.setZoom(15);
+   searchAttractions();
+  }
+  else {
+   $('#autocomplete').attr("placeholder","Enter a city");
+  }
+ }
+
+}
 
         // Sets a listener on a radio button to change the filter type on Places
         // Autocomplete.
-        function setupClickListener(id, types) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function() {
-            autocomplete.setTypes(types);
-          });
-        }
-
-        setupClickListener('changetype-all', []);
-        setupClickListener('changetype-address', ['address']);
-        setupClickListener('changetype-establishment', ['establishment']);
-        setupClickListener('changetype-geocode', ['geocode']);
-
-        document.getElementById('use-strict-bounds')
-            .addEventListener('click', function() {
-              console.log('Checkbox clicked! New state=' + this.checked);
-              autocomplete.setOptions({strictBounds: this.checked});
-            });
-      }
+        
