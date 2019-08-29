@@ -25,7 +25,7 @@ var createMarker;
         
         // Set initial restrict to the greater list of countries.
         autocomplete.setComponentRestrictions(
-            {'country': ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']});
+            {'country': ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']});
 
         // Set the data fields to return when the user selects a place.
         autocomplete.setFields(
@@ -86,11 +86,11 @@ var createMarker;
 
         setupClickListener('changecountry-greece', 'gr');
         setupClickListener(
-            'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
+            'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']);
             
-        setupClickListener('changecountry-uk', 'uk');
+        setupClickListener('changecountry-gb', 'gb');
         setupClickListener(
-            'changecountry-uk-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
+            'changecountry-gb-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']);
     
 
         /*document.getElementById('use-strict-bounds')
