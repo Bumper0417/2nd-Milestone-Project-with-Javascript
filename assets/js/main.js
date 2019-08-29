@@ -88,14 +88,14 @@ var createMarker;
         setupClickListener(
             'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
             
-        setupClickListener('changecountry-uk', 'gr');
+        setupClickListener('changecountry-uk', 'uk');
         setupClickListener(
             'changecountry-uk-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
     
 
-        document.getElementById('use-strict-bounds')
+        /*document.getElementById('use-strict-bounds')
             .addEventListener('click', function() {
               console.log('Checkbox clicked! New state=' + this.checked);
               autocomplete.setOptions({strictBounds: this.checked});
             });
-      }
+      } */
