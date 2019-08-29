@@ -87,6 +87,11 @@ var createMarker;
         setupClickListener('changecountry-greece', 'gr');
         setupClickListener(
             'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
+            
+        setupClickListener('changecountry-uk', 'gr');
+        setupClickListener(
+            'changecountry-uk-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
+    
 
         document.getElementById('use-strict-bounds')
             .addEventListener('click', function() {
