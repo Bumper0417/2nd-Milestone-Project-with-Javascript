@@ -39,24 +39,15 @@
     <div class="pac-card" id="pac-card">
       <div>
         <div id="title">
-          Search Criteria
+          Find A Country!
         </div>
-        <div id="type-selector" class="pac-controls">
-          <input type="radio" name="type" id="changetype-all" checked="checked">
-          <label for="changetype-all">Location</label>
+        <div id="country-selector" class="pac-controls">
+          <input type="radio" name="type" id="changecountry-greece">
+          <label for="changecountry-greece">Greece</label>
 
-          <input type="radio" name="type" id="changetype-establishment">
-          <label for="changetype-establishment">Establishments</label>
-
-          <input type="radio" name="type" id="changetype-address">
-          <label for="changetype-address">Addresses</label>
-
-          <input type="radio" name="type" id="changetype-geocode">
-          <label for="changetype-geocode">Geocodes</label>
+          <input type="radio" name="type" id="changecountry-usa-and-uot" checked="checked">
+          <label for="changecountry-greece-and-uot">Greece and unincorporated organized territories</label>
         </div>
-        <div id="strict-bounds-selector" class="pac-controls">
-          <input type="checkbox" id="use-strict-bounds" value="">
-          <label for="use-strict-bounds">Strict Bounds</label>
         </div>
       </div>
       <div id="pac-container">
@@ -70,6 +61,7 @@
       <span id="place-name"  class="title"></span><br>
       <span id="place-address"></span>
     </div>
+    
     <!-- Modal Popup -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">

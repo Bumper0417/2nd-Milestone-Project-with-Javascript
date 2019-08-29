@@ -1,21 +1,20 @@
-var countryRestrict = { 'country': [] };
-console.log('boom');
+var service;
+var createMarker;
 
-  // This example requires the Places library. Include the libraries=places
+// This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13
+          center: {lat:37.983810, lng:23.727539},
+          zoom:13
         });
         var card = document.getElementById('pac-card');
         var input = document.getElementById('pac-input');
         var types = document.getElementById('type-selector');
         var strictBounds = document.getElementById('strict-bounds-selector');
 
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
 
         var autocomplete = new google.maps.places.Autocomplete(input);
 
@@ -23,6 +22,10 @@ console.log('boom');
         // so that the autocomplete requests use the current map bounds for the
         // bounds option in the request.
         autocomplete.bindTo('bounds', map);
+        
+        // Set initial restrict to the greater list of countries.
+        autocomplete.setComponentRestrictions(
+            {'country': ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']});
 
         // Set the data fields to return when the user selects a place.
         autocomplete.setFields(
@@ -81,10 +84,9 @@ console.log('boom');
           });
         }
 
-        setupClickListener('changetype-all', []);
-        setupClickListener('changetype-address', ['address']);
-        setupClickListener('changetype-establishment', ['establishment']);
-        setupClickListener('changetype-geocode', ['geocode']);
+        setupClickListener('changecountry-greece', 'gr');
+        setupClickListener(
+            'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'uk']);
 
         document.getElementById('use-strict-bounds')
             .addEventListener('click', function() {
@@ -92,4 +94,3 @@ console.log('boom');
               autocomplete.setOptions({strictBounds: this.checked});
             });
       }
- 
