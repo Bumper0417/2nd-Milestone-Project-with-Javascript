@@ -60,7 +60,7 @@ var createMarker;
           marker.setPosition(place.geometry.location);
           marker.setVisible(true);
 
-          var address = '';
+          //var address = '';
           if (place.address_components) {
             address = [
               (place.address_components[0] && place.address_components[0].short_name || ''),
@@ -95,7 +95,7 @@ var createMarker;
 
         /*document.getElementById('use-strict-bounds')
             .addEventListener('click', function() {
-              console.log('Checkbox clicked! New state=' + this.checked);
+             console.log('Checkbox clicked! New state=' + this.checked);
               autocomplete.setOptions({strictBounds: this.checked});
-            });
-      } */
+            });*/
+      } 
