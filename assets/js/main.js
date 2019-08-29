@@ -1,5 +1,6 @@
 var service;
 var createMarker;
+var countries = [];
 
 // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
@@ -12,8 +13,8 @@ var createMarker;
         });
         var card = document.getElementById('pac-card');
         var input = document.getElementById('pac-input');
-        var types = document.getElementById('type-selector');
-        var strictBounds = document.getElementById('strict-bounds-selector');
+        var types = document.getElementById('country-selector');
+        //var strictBounds = document.getElementById('strict-bounds-selector');
 
 
         var autocomplete = new google.maps.places.Autocomplete(input);
@@ -80,7 +81,7 @@ var createMarker;
         function setupClickListener(id, types) {
           var radioButton = document.getElementById(id);
           radioButton.addEventListener('click', function() {
-            autocomplete.setTypes(types);
+            autocomplete.setTypes([]);
           });
         }
 
