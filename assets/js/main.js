@@ -26,7 +26,7 @@ var countries = [];
         
         // Set initial restrict to the greater list of countries.
         autocomplete.setComponentRestrictions(
-            {'country': ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']});
+            {'country': ['gr', 'gb']});
 
         // Set the data fields to return when the user selects a place.
         autocomplete.setFields(
@@ -78,20 +78,20 @@ var countries = [];
 
         // Sets a listener on a radio button to change the filter type on Places
         // Autocomplete.
-        function setupClickListener(id, types) {
+        function setupClickListener(id, countries) {
           var radioButton = document.getElementById(id);
           radioButton.addEventListener('click', function() {
-            autocomplete.setTypes([]);
+            autocomplete.setComponentRestrictions({'country': countries});
           });
         }
 
         setupClickListener('changecountry-greece', 'gr');
         setupClickListener(
-            'changecountry-greece-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']);
+            'changecountry-greece-and-uot', 'gr');
             
         setupClickListener('changecountry-gb', 'gb');
         setupClickListener(
-            'changecountry-gb-and-uot', ['gr', 'pr', 'vi', 'gu', 'mp', 'usa', 'gb']);
+            'changecountry-gb-and-uot', 'gb');
     
 
         /*document.getElementById('use-strict-bounds')
