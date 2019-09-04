@@ -1,6 +1,3 @@
-var service;
-var createMarker;
-var countries = [];
 
 // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
@@ -15,6 +12,11 @@ var countries = [];
         var input = document.getElementById('pac-input');
         var types = document.getElementById('country-selector');
         //var strictBounds = document.getElementById('strict-bounds-selector');
+        
+        //Dropdown menu//
+        
+        const destinationSelect = document.getElementById('destinationSelect');
+        
 
 
         var autocomplete = new google.maps.places.Autocomplete(input);
