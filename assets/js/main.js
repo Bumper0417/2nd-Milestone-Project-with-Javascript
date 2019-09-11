@@ -5,7 +5,7 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
-var countryRestrict = {'country': 'gr'};
+var countryRestrict = {'country': []};
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_red';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
@@ -140,4 +140,35 @@ function search() {
      }
     }
   });
+}
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    if (markers[i]) {
+      markers[i].setMap('null');
+    }
+  }
+  markers = [];
+}
+
+// Set the country restriction based on user input.
+// Also center and zoom the map on the given country.
+
+function setAutocompleteCountry() {
+  var country = document.getElementById('country').value;
+  if (country == 'all') {
+    autocomplete.setComponentRestrictions({'country': []});
+    map.setCenter({lat: 15, lng: 0});
+    map.setZoom(2);
+  }else {
+    autocomplete.setComponentRestrictions({'country': country});
+    map.setCenter(countries[country].center);
+    map.setZoom(countries[country].zoom);
+  }
+  clearResults();
+  clearMarkers();
+}
+function dropMarker(i) {
+  return function() {
+  markers[i].setMap(map);
+  };
 }
