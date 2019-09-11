@@ -92,7 +92,6 @@ function initMap() {
     places = new google.maps.places.PlacesService(map);
     
     autocomplete.addListener('place_changed', onPlaceChanged);
-    /*getElementById('country').addEventListener('change', onPlaceChanged);*/
     
     //Add a dom event listener to react when a user selects a country
     document.getElementById('country').addEventListener('change', setAutocompleteCountry);
@@ -254,7 +253,7 @@ function setAutocompleteCountry() {
   }else {
     autocomplete.setComponentRestrictions({'country': country});
     map.setCenter(countries[country].center);
-    map.setZoom(countries[country].zoom);
+    //map.setZoom(countries[country].zoom);
   }
   clearResults();
   clearMarkers();
@@ -263,4 +262,11 @@ function dropMarker(i) {
   return function() {
   markers[i].setMap(map);
   };
+}
+
+function clearResults() {
+  var results = document.getElementById('results');
+  while (results.childNodes[0]) {
+    results.removeChild(results.childNodes[0]);
+  }
 }
