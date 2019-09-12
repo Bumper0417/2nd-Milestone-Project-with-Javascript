@@ -97,41 +97,21 @@ function initMap() {
     //Add a dom event listener to react when a user selects a country
     document.getElementById('country').addEventListener('change', setAutocompleteCountry);
 } 
-
+$("#category-select").change(onPlaceChanged);
 function onPlaceChanged() {
-  if ($('hotel').click()) {
-    var place = autocomplete.getPlace();
-    if (place.geometry) {
-     map.panTo(place.geometry.location);
-     map.setZoom(15);
-     searchHotel();
-    }
-    else {
-      document.getElementById('autocomplete').placeholder = 'Enter a city';
-    }
-  }
-  else if ($('restaurants').click()) {
-    var place = autocomplete.getPlace();
-    if (place.geometry) {
-     map.panTo(place.geometry.location);
-     map.setZoom(15);
-     searchRestaurants();
-    }
-    else {
-      document.getElementById('autocomplete').placeholder = 'Enter a city';
-    }
-  }
-  else if ($('attractions').click()) {
-    var place = autocomplete.getPlace();
-    if (place.geometry) {
-     map.panTo(place.geometry.location);
-     map.setZoom(15);
-     searchAttractions();
-    }
-    else {
-      document.getElementById('autocomplete').placeholder = 'Enter a city';
-    }
-  }
+  search_for = $(this).children("option:selected").val();
+  var place = autocomplete.getPlace();
+  map.panTo(place.geometry.location);
+  map.setZoom(15);
+  if (search_for == 'hotel') {
+    searchHotel();
+  }else if (search_for == 'restaurants') {
+    searchRestaurants();
+  }else if (search_for == 'attractions') {
+    searchAttractions();
+  }else {
+    document.getElementById('autocomplete').placeholder = "Enter a city";
+  };
 }
 
 // Search for hotels in the selected city, within the viewport of the map.
@@ -352,7 +332,6 @@ if (place.rating) {
 } else {
     document.getElementById('iw-rating-row').style.display = 'none';
   }
-
 // The regexp isolates the first part of the URL (domain plus subdomain
 // to give a short URL for displaying in the info window.
 if (place.website) {
