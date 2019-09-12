@@ -66,7 +66,7 @@ var countries = {
 
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
+   map = new google.maps.Map(document.getElementById('map'), {
   center: {lat:37.983810, lng:23.727539},
   zoom:13
   });
@@ -74,7 +74,6 @@ function initMap() {
     content: document.getElementById('info-content')
   });
   const categorySelect = document.getElementById('category-select');
-
 
   categorySelect.addEventListener('change', (event) => {
   console.log(event.target.value);
@@ -90,6 +89,8 @@ function initMap() {
     });
     
     places = new google.maps.places.PlacesService(map);
+    
+    searchRestaurants();
     
     autocomplete.addListener('place_changed', onPlaceChanged);
     
@@ -137,6 +138,8 @@ function onPlaceChanged() {
 
 function searchHotel() {
   var search = {
+    location : {lat:37.983810, lng:23.727539},
+    radius : 5000,
     bounds : map.getBounds(),
     types : ['lodging']
   };
@@ -170,10 +173,13 @@ function searchHotel() {
 
 function searchRestaurants() {
   var search = {
+    location : {lat:37.983810, lng:23.727539},
+    radius : 5000,
     bounds : map.getBounds(),
     types : ['restaurant', 'bar', 'night_club']
   };
   places.nearbySearch(search, function(results, status) {
+    console.log(results, status);
   if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
@@ -203,6 +209,8 @@ function searchRestaurants() {
 
 function searchAttractions() {
   var search = {
+    location : {lat:37.983810, lng:23.727539},
+    radius : 5000,
     bounds : map.getBounds(),
     types : ['zoo', 'amusement_park', 'car_rental']
   };
@@ -253,7 +261,7 @@ function setAutocompleteCountry() {
   }else {
     autocomplete.setComponentRestrictions({'country': country});
     map.setCenter(countries[country].center);
-    //map.setZoom(countries[country].zoom);
+    map.setZoom(countries[country].zoom);
   }
   clearResults();
   clearMarkers();
