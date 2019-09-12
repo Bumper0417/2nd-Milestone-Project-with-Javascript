@@ -99,19 +99,19 @@ function initMap() {
 } 
 $("#category-select").change(onPlaceChanged);
 function onPlaceChanged() {
-  search_for = $(this).children("option:selected").val();
+  search_for = $("#category-select").children("option:selected").val();
   var place = autocomplete.getPlace();
   map.panTo(place.geometry.location);
   map.setZoom(15);
-  if (search_for == 'hotel') {
+  if (search_for == "hotel") {
     searchHotel();
-  }else if (search_for == 'restaurants') {
+  }else if (search_for == "restaurants") {
     searchRestaurants();
-  }else if (search_for == 'attractions') {
+  }else if (search_for == "attractions") {
     searchAttractions();
   }else {
-    document.getElementById('autocomplete').placeholder = "Enter a city";
-  };
+    document.getElementById("autocomplete").placeholder = "Enter a city";
+  }
 }
 
 // Search for hotels in the selected city, within the viewport of the map.
