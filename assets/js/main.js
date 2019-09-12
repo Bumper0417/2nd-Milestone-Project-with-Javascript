@@ -272,9 +272,16 @@ function dropMarker(i) {
   };
 }
 
+function addResult(result, i) {
+  var results = document.getElementById('results');
+  var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
+  var markerIcon = MARKER_PATH + markerLetter + '.png';
+        
+}
+
 function clearResults() {
   var results = document.getElementById('results');
-  while (results.childNodes[0]) {
-    results.removeChild(results.childNodes[0]);
+  while (results.childNodes[1]) {
+    results.removeChild(results.childNodes[1]);
   }
 }
