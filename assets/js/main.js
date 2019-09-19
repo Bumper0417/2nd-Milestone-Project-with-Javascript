@@ -2,7 +2,8 @@
 // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-var map, places, infoWindow;
+var map = "";
+var places, infoWindow;
 var markers = [];
 var autocomplete;
 var countryRestrict = {'country': []};
@@ -68,7 +69,7 @@ var countries = {
 function initMap() {
    map = new google.maps.Map(document.getElementById('map'), {
   center: {lat:37.983810, lng:23.727539},
-  zoom:13
+  zoom:13,
   });
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-content')
