@@ -102,16 +102,18 @@ $("#category-select").change(onPlaceChanged);
 function onPlaceChanged() {
   search_for = $("#category-select").children("option:selected").val();
   var place = autocomplete.getPlace();
-  map.panTo(place.geometry.location);
-  map.setZoom(15);
-  if (search_for == "hotel") {
-    searchHotel();
-  }else if (search_for == "restaurants") {
-    searchRestaurants();
-  }else if (search_for == "attractions") {
-    searchAttractions();
-  }else {
-    document.getElementById("autocomplete").placeholder = "Enter a city";
+  if (place.geometry){
+    map.panTo(place.geometry.location);
+    map.setZoom(15);
+    if (search_for == "hotel") {
+      searchHotel();
+    }else if (search_for == "restaurants") {
+      searchRestaurants();
+    }else if (search_for == "attractions") {
+      searchAttractions();
+    }else {
+      document.getElementById("autocomplete").placeholder = "Enter a city";
+    }
   }
 }
 
