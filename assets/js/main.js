@@ -224,7 +224,7 @@ function searchAttractions() {
 function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
     if (markers[i]) {
-      markers[i].setMap('null');
+      markers[i].setMap(null);
     }
   }
   markers = [];
