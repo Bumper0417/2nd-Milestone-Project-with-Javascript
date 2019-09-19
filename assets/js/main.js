@@ -193,7 +193,7 @@ function searchAttractions() {
     location : {lat:37.983810, lng:23.727539},
     radius : 5000,
     bounds : map.getBounds(),
-    types : ['zoo', 'amusement_park', 'car_rental']
+    types : ['museum']
   };
   places.nearbySearch(search, function(results, status) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
