@@ -91,7 +91,7 @@ function initMap() {
     
     places = new google.maps.places.PlacesService(map);
     
-    searchRestaurants();
+    //searchRestaurants();
     
     autocomplete.addListener('place_changed', onPlaceChanged);
     
@@ -107,6 +107,7 @@ function onPlaceChanged() {
       map.panTo(place.geometry.location);
       map.setZoom(15);
     }
+  }
     if (search_for == "hotel") {
       searchHotel();
     }else if (search_for == "restaurants") {
@@ -117,7 +118,7 @@ function onPlaceChanged() {
       document.getElementById("autocomplete").placeholder = "Enter a city";
     }
   }
-}
+  
 
 // Search for hotels in the selected city, within the viewport of the map.
 

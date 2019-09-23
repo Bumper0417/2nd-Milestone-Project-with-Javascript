@@ -131,6 +131,20 @@ header {
     background:rgba(0, 0, 0, 0.2);
 }
 
+/*----- Menu Items----*/
+
+
+#category-select {
+    display: inline-block;
+}
+
+#location-field {
+    display: inline-block;
+}
+
+#controls {
+    display: inline-block;
+}
 /*---MAP----*/
 
 #map {
