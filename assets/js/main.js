@@ -102,7 +102,7 @@ $("#category-select").change(onPlaceChanged);
 function onPlaceChanged() {
   search_for = $("#category-select").children("option:selected").val();
   var place = autocomplete.getPlace();
-  if (place.geometry){
+  if (place){
     map.panTo(place.geometry.location);
     map.setZoom(15);
     if (search_for == "hotel") {
