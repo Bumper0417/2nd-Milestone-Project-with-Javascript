@@ -136,14 +136,17 @@ header {
 
 #category-select {
     display: inline-block;
+    width: 300px;
 }
 
 #location-field {
     display: inline-block;
+    width: 200px;
 }
 
 #controls {
     display: inline-block;
+    width: 300;
 }
 /*---MAP----*/
 
