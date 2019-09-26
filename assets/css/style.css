@@ -171,7 +171,7 @@ html, body {
 }
 
 #infowindow-content {
-  display: none;
+  display:none;
 }
 
 #map #infowindow-content {
@@ -186,6 +186,7 @@ html, body {
   font-weight: 500;
   padding: 6px 12px;
 }
+
 
  /*----Footer-----*/
  
