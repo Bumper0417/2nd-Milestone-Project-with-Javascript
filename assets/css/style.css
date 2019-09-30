@@ -152,15 +152,10 @@ header {
 
 #map {
   height: 100%;
-  flex:1;
-}
-#map-container{
-    height: 100%;
-    display: flex;
 }
 
 
-#listing { width: 300px; }
+
 
 
 
