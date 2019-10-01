@@ -148,14 +148,6 @@ header {
     display: inline-block;
     width: 300;
 }
-/*---MAP----*/
-
-#map {
-  height: 100%;
-}
-
-
-
 
 
 
@@ -191,6 +183,14 @@ html, body {
   font-size: 25px;
   font-weight: 500;
   padding: 6px 12px;
+}
+
+.map-container {
+    height:100%;
+}
+
+#map {
+    height:100%;
 }
 
 
@@ -272,6 +272,16 @@ button[type="submit"]{
       margin:0 auto;
       max-width: 50%;
     }
+    #map {
+  height: 100%;
+  flex: 1;
+}
+
+.map-container {
+    display:flex;
+}
+
+#listing { width: 300px }
 }
 
 @media(max-width: 500px){
@@ -283,6 +293,7 @@ button[type="submit"]{
         margin-right: 26px;
     }
 }
+
 
 
 
